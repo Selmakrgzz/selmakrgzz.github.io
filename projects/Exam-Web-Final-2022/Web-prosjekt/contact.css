@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: rgb(7, 38, 51);
+  /*height: 100vh; */
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(7, 38, 51);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+}
+
+/*SJEKK HER*/
+.logo {
+  width: 150px;
+  cursor: pointer;
+  margin: 20px 30px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin: 0 40px 0 0;
+}
+
+/*SJEKK HER*/
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 22px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Playfair Display";
+  color: #D9B382;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+nav ul li a:hover {
+  color: beige;
+}
+
+.menu-icon {
+  margin-right: 50px;
+  display: none;
+}
+
+#btn {
+  display: none;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #D9B382;
+}
+
+
+
+#contactPage {
+  background-color: rgb(7, 38, 51);
+}
+
+.contact {
+  display: grid;
+  margin-top: 200px;
+  row-gap: 30px;
+}
+
+/*.contact:after{
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+.column1 {
+  text-align: center;
+}
+
+.information h1 {
+  font-size: 50px;
+  max-width: 100%;
+  margin-bottom: 40px;
+}
+
+.information h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.information p,
+a {
+  font-size: 20px;
+}
+
+.information h1,
+h2 {
+  color: #D9B382;
+  padding-bottom: 10px;
+  font-family: "Playfair Display";
+}
+
+/*SJEKK ELLER ENDRE*/
+.information p,
+a {
+  color: #fff;
+  /*padding-bottom: 10px;*/
+  font-family: "Playfair Display";
+}
+
+/*Kode for sosiale medier ikoner er hentet fra W3schools.com*/
+.fa {
+  font-size: 30px;
+  width: 35px;
+  margin-right: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #C42C92;
+  color: yellow;
+}
+
+.socialmedia {
+  margin-top: 95px;
+}
+
+.socialmedia h3 {
+  color: #D9B382;
+  font-size: 30px;
+  margin-bottom: 40px;
+
+}
+
+.column2 {
+  margin-top: 30px;
+  text-align: center;
+  overflow: hidden;
+  padding: 20px;
+
+}
+
+.column2 h4 {
+  padding-bottom: 40px;
+  color: #D9B382;
+  font-size: 35px;
+  font-family: "Playfair Display";
+}
+
+.map {
+  width: 1000px;
+  max-width: 100%;
+  height: 400px;
+}
+
+@media only screen and (max-width:1230px) {
+
+  .logo {
+    width: 140px;
+    cursor: pointer;
+    margin: 10px 20px;
+  }
+
+  .menu-icon {
+    width: 45px;
+    margin-right: 15px;
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    background: whitesmoke;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  nav ul li a {
+    color: rgb(7, 38, 51);
+  }
+
+  #menuList {
+    overflow: hidden;
+  }
+
+  #btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+}

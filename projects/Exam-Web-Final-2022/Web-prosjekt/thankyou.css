@@ -1,0 +1,28 @@
+#mainPageTY{
+    background: url(hovedside6.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    }
+    
+    #mainTitleTY{
+      margin: auto;
+      text-align: center;
+      background-color: rgb(7, 38, 51);
+      width: 100%;
+      height: 120px;
+      padding: 30px;
+    }
+
+    .TYFont {
+        color: #D9B382;
+        font-size: 50px;  
+      }
+
+    .EndmsgTY {
+        color: #D9B382;
+        font-size: 25px;
+        margin-top: 5px;
+    }

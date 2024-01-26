@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  background-color: rgb(7, 38, 51);
+  font-family: "Playfair Display";
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(7, 38, 51);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+  margin: 20px 30px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin: 0 50px 0 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Playfair Display";
+  color: #D9B382;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+nav ul li a:hover {
+  color: beige;
+}
+
+.menu-icon {
+  margin-right: 50px;
+  display: none;
+}
+
+#btn {
+  display: none;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #D9B382;
+}
+
+
+.start {
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.start1 {
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+  text-align: center;
+  color: #D9B382;
+
+
+}
+
+.start2 {
+  color: #D9B382;
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 3px;
+}
+
+h4 {
+  color: #D9B382;
+  font-family: "Playfair Display";
+}
+
+.size {
+  font-size: 25px;
+  font-family: "Playfair Display";
+}
+
+.font {
+  font-family: "Playfair Display";
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.menucss {
+  font-family: "Playfair Display";
+  color: white;
+  font-size: 16px;
+}
+
+.menucss1 {
+  font-size: 16px;
+  font-family: "playfair Display";
+  color: #D9B382;
+  font-style: italic;
+}
+
+.price {
+  color: #D9B382;
+  font-family: "Playfair Display";
+  font-size: 20px;
+}
+
+
+/*deler hele siden i bestemte deler*/
+section {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+}
+
+
+h2 {
+  margin-bottom: 10px;
+}
+
+
+h3 {
+  letter-spacing: 2px;
+}
+
+hr.top0 {
+  align-content: center;
+  color: black;
+}
+
+hr.top3 {
+  width: 50%;
+  padding-top: 60px;
+  margin: auto;
+
+}
+
+
+#drinks {
+  padding: 100px;
+  text-align: center;
+}
+
+
+.menu {
+  display: none;
+  align-content: center;
+}
+
+.LMcontent {
+  padding-top: 100px;
+}
+
+.photograph1 {
+  color: #D9B382;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.photograph2 {
+  color: #D9B382;
+  font-style: italic;
+  font-size: 13px;
+}
+
+.photograph3 {
+  color: #D9B382;
+  font-style: italic;
+  font-size: 13px;
+}
+
+
+
+@media only screen and (max-width:1230px) {
+
+  .logo {
+    width: 140px;
+    cursor: pointer;
+    margin: 10px 20px;
+  }
+
+  .menu-icon {
+    width: 45px;
+    margin-right: 15px;
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    background: whitesmoke;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  nav ul li a {
+    color: rgb(7, 38, 51);
+  }
+
+  #menuList {
+    overflow: hidden;
+  }
+
+  #btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+}
+
+@media screen and (max-width:1000px) {
+
+  .left,
+  .main,
+  .right {
+    width: 100%;
+    /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

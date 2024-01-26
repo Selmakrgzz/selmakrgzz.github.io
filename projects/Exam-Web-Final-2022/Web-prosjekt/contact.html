@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Legger til lenke, som inneholder sosiale medier ikoner -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <div class="Container">
+        <div class="navbar">
+            <a href="./index.html"><img src="logo1.png" alt="La Mirabelle logo" class="logo"></a>
+            <!--Kode for liste. For å koble til steder på nettsiden som contact eks, så må du skrive #(id navnet) i href="" til stedet på siden du ønsker å koble til-->
+            <nav>
+                <ul id="menuList">
+                    <li class="liste"><a href="./index.html">Home</a></li>
+                    <li class="liste"><a href="./venue.html">Venue</a></li>
+                    <li class="liste"><a href="./cafe.html">Cafe</a></li>
+                    <li class="liste"><a href="./contact.html">Contact</a></li>
+                    <li class="liste"><a href="./reservation.html">Reservation</a></li>
+                    <li class="liste"><a href="./accessibility_page.html">Accessibility Page</a></li>
+                    <li class="liste"><a href="./technology&society.html">Technology and Society</a></li>
+                </ul>
+            </nav>
+            <button id="btn" onclick="togglemenu()"><img src="menuLogo.png" class="menu-icon"></button>
+        </div>
+
+        <div class="btn-up">
+            <a href="#contactPage"><img src="up_icon.png" alt="arrow up"></a>
+        </div>
+
+        <section id="contactPage">
+            <div class="contact">
+
+                <div class="column1">
+                    <div class="information">
+                        <h1>Contact Information</h1>
+                        <h2>Telephone</h2>
+                        <p>+47 83 27 49 10</p>
+                        <h2>Email</h2>
+                        <a href="mailto:">Contact@lamirabelle.no</a>
+                        <h2>Adress</h2>
+                        <p>Bjørvika veien 23, 07463 Oslo</p>
+                    </div>
+
+                    <!--Kode for sosiale medier ikoner er hentet fra W3schools.com-->
+                    <!--https://www.w3schools.com/howto/howto_css_social_media_buttons.asp-->
+                    <div class="socialmedia">
+                        <h3>Follow us on social media!</h3>
+                        <a href="https://www.facebook.com/" target=”_blank” class="fa fa-facebook"></a>
+                        <a href="https://twitter.com/" target=”_blank” class="fa fa-twitter"></a>
+                        <a href="https://www.instagram.com/" target=”_blank” class="fa fa-instagram"></a>
+                    </div>
+                </div>
+
+                <div class="column2">
+                    <h4>You can find us here!</h4>
+                    <!--https://www.google.com/maps/@59.9359488,10.9084672,13z-->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8003.059246925175!2d10.756689600000001!3d59.
+                902853549999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e8b1c3f6887%3A0xb44a016cb3c9d23a!
+                2zQmrDuHJ2aWthLCBPc2xv!5e0!3m2!1sno!2sno!4v1667418147299!5m2!1sno!2sno" allowfullscreen=""
+                        referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+    <!--Bruker Javascript for å lage navbar for mindre skjermstørrelser. Selv om Javascript ikke er en del av vårt pensum,
+         så valgte vi å bruke Javascript. Vi kunne ha laget denne navbaren med CSS også, men dette ville ha blitt mer hardhendt og mindre praktisk.-->
+    <script>
+        var menuList = document.getElementById("menuList");
+        var listItem = document.getElementsByClassName("liste");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+
+            if (menuList.style.maxHeight === "0px") {
+                menuList.style.maxHeight = "350px"
+                listItem.array.forEach(element => {
+                    this.style.display = "block"
+                });
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+                listItem.array.forEach(element => {
+                    this.style.display = "none"
+                });
+            }
+        }
+    </script>
+
+</body>
+
+</html>

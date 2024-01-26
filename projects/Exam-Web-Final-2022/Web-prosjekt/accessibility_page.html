@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accessibility_page.css">
+    <title>Accessibility page</title>
+</head>
+
+<body>
+    <section id="mainPage">
+        <div class="navbar">
+            <a href="./index.html"><img src="logo1.png" alt="La Mirabelle logo" class="logo"></a>
+            <!--Kode for liste. For å koble til steder på nettsiden som contact eks, så må du skrive #(id navnet) i href="" til stedet på siden du ønsker å koble til-->
+            <nav>
+                <ul id="menuList">
+                    <li class="liste"><a href="./index.html">Home</a></li>
+                    <li class="liste"><a href="./venue.html">Venue</a></li>
+                    <li class="liste"><a href="./cafe.html">Cafe</a></li>
+                    <li class="liste"><a href="./contact.html">Contact</a></li>
+                    <li class="liste"><a href="./reservation.html">Reservation</a></li>
+                    <li class="liste"><a href="./accessibility_page.html">Accessibility Page</a></li>
+                    <li class="liste"><a href="./technology&society.html">Technology and Society</a></li>
+                </ul>
+            </nav>
+            <button id="btn" onclick="togglemenu()"><img src="menuLogo.png" class="menu-icon"></button>
+        </div>
+        <div class="btn-up">
+            <a href="#mainPage"><img src="up_icon.png" alt="arrow up"></a>
+        </div>
+        <div id="mainTitle">
+            <h1>Accessibility Page</h1>
+            <hr class="hr_01">
+        </div>
+    </section>
+
+
+    <section>
+        <div class="intro">
+            <h2>Journey of La Mirabella`s website!</h2>
+            <hr class="hr_02">
+            <p>Before we started coding the website, we sat down to plan. We outlined how we wanted the website to be
+                and distributed the work. The design on the website was put together based on inspiration from many
+                websites. Despite the fact that we visited many different websites, we quickly saw the difference
+                between a good and a not so good website. We saw that it was important to have a navigation bar that was
+                easy to handle, both for those familiar with the website from before, but also for those visiting it for
+                the first time. Furthermore, we saw that it was important to tell the user already on the main page what
+                the website is about, and to have such a layout that saves the user time, and makes it easy to find
+                where you are going.</p>
+
+            <hr class="hr_03">
+
+        </div>
+    </section>
+
+    <!--Bilde av: ui.dev: https://ui.dev/amiresponsive?url=https://selmakrgzz.github.io/web-exam/-->
+    <section class="img_page">
+        <div class="full_image1">
+            <img src="responsive_img.jpg" alt="Website responsiveness">
+            <p class="photograph1">Image by ui.dev</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="column1">
+            <h3>Design/CSS</h3>
+            <hr class="hr_03">
+            <p>The design was well thought out. We wanted the design on each page to be the same, this to preserve the
+                same theme and to reassure the user that the different pages were connected, as part of the same
+                concept. We also think that for the sake of aesthetics, it looked nice. What we also had to think about
+                was that the text should not disappear in the background colour, but that it was nice, clear and
+                legible. we also made sure that there were clear contrasts so that all users can have the opportunity to
+                read without problems. We made sure that the heading and subheading were the right size, and that the
+                images were a good size. This is so that it does not become too large or too small on the mobile phone.
+                We also took into account that the website was scalable to different screen sizes.</p>
+        </div>
+    </section>
+
+    <!--Bilde av: 200 degrees: https://pixabay.com/no/vectors/sikkerhetsavdeling-sikker-system-1653345/-->
+    <section class="img_page">
+        <div class="full_image2">
+            <img src="random.png" alt="responsivnes">
+            <p class="photograph2">Image by 200degrees</p>
+        </div>
+    </section>
+
+
+    <section id="ending">
+        <div class="row1">
+            <div class="column2">
+                <h3>Accessibility test</h3>
+                <hr class="hr_03">
+                <p>We ran an Accessibility test and saw that the setup solution on the "Cafee" page was not good enough.
+                    We had "Flip-up cards" on the menu (the picture is attached below). Every time the mouse would come
+                    into contact with the flip-up card, it would turn around and show a picture of the dish itself. It
+                    seemed like a lot of fun to get to code something like this, but we realized that this wasn't a
+                    solution that was user-friendly for everyone. It may be that someone struggles to keep the mouse
+                    button still over the card or for a very different reason has an illness or a disability that makes
+                    this a problem. Another usability issue was an image we had chosen, which had a lot of flashing
+                    lights. Here, we had not taken into account users who may suffer from epilepsy, so we replaced this
+                    with a more user-friendly image.</p>
+            </div>
+
+            <!--This picture was screenshoted after running the accessibility test from this website: https://uitest.com/-->
+            <div class="column3">
+                <img src="acc1.png" alt="social media on phone">
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Bruker Javascript for å lage navbar for mindre skjermstørrelser. Selv om Javascript ikke er en del av vårt pensum,
+         så valgte vi å bruke Javascript. Vi kunne ha laget denne navbaren med CSS også, men dette ville ha blitt mer hardhendt og mindre praktisk.-->
+    <script>
+        var menuList = document.getElementById("menuList");
+        var listItem = document.getElementsByClassName("liste");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+
+            if (menuList.style.maxHeight === "0px") {
+                menuList.style.maxHeight = "350px"
+                listItem.array.forEach(element => {
+                    this.style.display = "block"
+                });
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+                listItem.array.forEach(element => {
+                    this.style.display = "none"
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

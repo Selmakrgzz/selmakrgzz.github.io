@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="thankyou.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class = "Container">
+    <div class = "navbar">
+        <!--Logo hentet fra https://www.freelogodesign.org/-->
+        <a href="./index.html"><img src="logo1.png" alt="La Mirabelle logo" class="logo"></a>
+        <!--Kode for liste. For å koble til steder på nettsiden som contact eks, så må du skrive #(id navnet) i href="" til stedet på siden du ønsker å koble til-->
+        <nav>
+            <ul id="menuList">
+                <li class="liste"><a href="./index.html">Home</a></li>
+                <li class="liste"><a href="./venue.html">Venue</a></li>
+                <li class="liste"><a href="./cafe.html">Cafe</a></li>
+                <li class="liste"><a href="./contact.html">Contact</a></li>
+                <li class="liste"><a href="./reservation.html">Reservation</a></li>
+                <li class="liste"><a href="./accessibility_page.html">Accessibility Page</a></li>
+                <li class="liste"><a href="./technology&society.html">Technology and Society</a></li>
+            </ul>
+        </nav>
+        <button id="btn" onclick="togglemenu()"><img src="menuLogo.png" class="menu-icon"></button>
+    </div>
+    
+    <section id="mainPageTY">
+        <div id="mainTitleTY">
+            <div class="TYFont">Thank You</div>
+            <hr class="hr_01TY">
+            <div class="EndmsgTY">We have received your reservation and will get back with you soon.</div>
+        </div>
+    </section>
+
+    <script>
+        var menuList = document.getElementById("menuList");
+        var listItem = document.getElementsByClassName("liste");
+        menuList.style.maxHeight = "0px";
+        function togglemenu(){
+    
+            if(menuList.style.maxHeight === "0px")
+            {
+                menuList.style.maxHeight = "350px"
+                listItem.array.forEach(element => {
+                    this.style.display = "block"
+                });
+            }
+            else
+            {
+                menuList.style.maxHeight = "0px"
+                listItem.array.forEach(element => {
+                    this.style.display = "none"
+                });
+            }
+        }
+    </script>
+
+</body>
+</html>

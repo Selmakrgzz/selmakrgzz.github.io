@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="venue.css">
+    <script src="https://kit.fontawesome.com/7251bae8b8.js" crossorigin="anonymous"></script>
+    <title>Venue</title>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="./index.html"><img src="logo1.png" alt="La Mirabelle logo" class="logo"></a>
+        <!--Kode for liste. For å koble til steder på nettsiden som contact eks, så må du skrive #(id navnet) i href="" til stedet på siden du ønsker å koble til-->
+        <nav>
+            <ul id="menuList">
+                <li class="liste"><a href="./index.html">Home</a></li>
+                <li class="liste"><a href="./venue.html">Venue</a></li>
+                <li class="liste"><a href="./cafe.html">Cafe</a></li>
+                <li class="liste"><a href="./contact.html">Contact</a></li>
+                <li class="liste"><a href="./reservation.html">Reservation</a></li>
+                <li class="liste"><a href="./accessibility_page.html">Accessibility Page</a></li>
+                <li class="liste"><a href="./technology&society.html">Technology and Society</a></li>
+            </ul>
+        </nav>
+        <button id="btn" onclick="togglemenu()"><img src="menuLogo.png" class="menu-icon"></button>
+    </div>
+
+    <div class="btn-up">
+        <a href="#LMcontent"><img src="up_icon.png" alt="arrow up"></a>
+    </div>
+
+    <section id="LMcontent">
+
+        <div id="venues">
+            <div class="left-side">
+                <h2>
+                    The Glasshouse
+                </h2>
+                <p>
+                    The Glasshouse is perfect for various events with colleagues. Here you can arrange different work
+                    reltated events such as meetings and confrences,
+                    or it can ofcourse be booked to enjoy yourself with your colleges! Maybe arranged a Christmas party
+                    or maybe a party to kick start the summer!
+                    The venue is placed at the 12th floor and the view from up here is breathtaking.</p>
+                <hr>
+                <div class="venue_info">
+                    <p>Areal: 500 squaremeters</p>
+                    <p>Total guests allowed: 60</p>
+                    <p>Price per hour: 900 kr</p>
+                </div>
+
+            </div>
+            <div class="right-side">
+                <img src="Business-meeting1.jpg" alt="venue1">
+                <!-- Image by Benjamin Child: https://unsplash.com/photos/GWe0dlVD9e0?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+                <p class="photograph1">Image by Benjamin Child</p>
+            </div>
+        </div>
+
+        <div id="venues2">
+            <div class="left-side2">
+                <img src="Wedding-venue1.jpg" alt="venue2">
+                <!-- Image by Thomas William: https://unsplash.com/photos/OAVqa8hQvWI?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+                <p class="photograph2">Image by Thomas William</p>
+            </div>
+            <div class="right-side2">
+                <h2>
+                    La Venue
+                </h2>
+                <p>
+                    There would be no celebration without the perfect venue for the wedding day. La venue suits you who
+                    wants that little something extra.
+                    Together with our competent wedding planners, we plan and arrange the day exactly as you wish! The
+                    venue is placed on 4th floor, and the lease includes 150 parking spaces at the back of the building.
+                </p>
+                <hr>
+                <div class="venue_info">
+                    <p>Areal: 1500 squaremeters</p>
+                    <p>Total guests allowed: 200</p>
+                    <p>Price per hour: 2000 kr</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="venues3">
+            <div class="left-side3">
+                <h2>
+                    Ninety-One
+                </h2>
+                <p>
+                    Just finished university, is it a 21st birthday or do you just want to party? Regardless of the
+                    occasion, we would like to help you on the way to the perfect event.
+                    The venue has a total of 1000 square meters and the DJ of course gets his own spot on stage! </p>
+                <hr>
+                <div class="venue_info">
+                    <p>Area: 1000 squaremeters</p>
+                    <p>Total guests allowed: 130</p>
+                    <p>Price per hour: 1200 kr</p>
+                </div>
+            </div>
+            <div class="right-side3">
+                <img src="Birthday-venue1.jpg" alt="venue3">
+                <!-- Image by Al Elmes: https://unsplash.com/photos/ULHxWq8reao?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+                <p class="photograph3">Image by Al Elmes</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="equipment">
+        <center>
+            <div id="tools">
+
+                <h3 class="start2">TOOLS AND EQUIPMENTS</h3>
+
+                <hr class="top4">
+                <div class="equipment-icon">
+                    <i class="fa-sharp fa-solid fa-screwdriver-wrench" style="font-size:40px; color: #D9B382;"></i>
+                    <i class="fa-sharp fa-solid fa-wifi" style="font-size:40px; color: #D9B382;"></i>
+                    <i class="fa-solid fa-gears" style="font-size:40px; color: #D9B382;"></i>
+                    <i class="fa-solid fa-computer" style="font-size:40px; color: #D9B382;"></i>
+                </div>
+
+                <p class="start"> Our business offer tools and equipments for your events: </p>
+
+
+                <hr class="top3">
+                <h4 class=start1>POWER AND CABLES</h4>
+
+                <p class="start"> If you’re organising an outdoor event, you’ll need to look at how to get power to the
+                    festivities. But even indoor events might require an extra extension cable or two. </p>
+
+
+
+                <hr class="top3">
+                <h4 class=start1>LIGHTING</h4>
+
+                <p class="start"> Whether you’re into lasers and spotlights or just need some dim lighting to set the
+                    mood, it’s a good idea if guests can see what’s going on or just see each other. </p>
+
+
+
+                <hr class="top3">
+                <h4 class=start1>SOUND</h4>
+
+                <p class="start"> Like lighting, sound equipment is an essential part of any event that features
+                    speeches or performances.
+                    Here is some of the sound equipment you may need:</p>
+                <p class="start1"> Microphones </p>
+                <p class="start1"> Speakers </p>
+                <p class="start1"> Headphones </p>
+                <p class="start1"> Music player (phone, laptop & tablets) </p>
+
+
+                <hr class="top3">
+                <h4 class=start1>VISUALS</h4>
+
+                <p class="start"> Presentations can be appropriate at many events, from corporate product demonstrations
+                    to embarrassing family photos at reunions. </p>
+
+                <p class="start1"> PowerPoint </p>
+                <p class="start1"> Projector </p>
+                <p class="start1"> Screen </p>
+                <p class="start1"> Flip chart </p> <br>
+
+
+                <hr class="top4">
+
+            </div>
+        </center>
+    </section>
+
+
+
+    <!--Bruker Javascript for å lage navbar for mindre skjermstørrelser. Selv om Javascript ikke er en del av vårt pensum,
+         så valgte vi å bruke Javascript. Vi kunne ha laget denne navbaren med CSS også, men dette ville ha blitt mer hardhendt og mindre praktisk.-->
+    <script>
+        var menuList = document.getElementById("menuList");
+        var listItem = document.getElementsByClassName("liste");
+        menuList.style.maxHeight = "0px";
+        function togglemenu() {
+
+            if (menuList.style.maxHeight === "0px") {
+                menuList.style.maxHeight = "350px"
+                listItem.array.forEach(element => {
+                    this.style.display = "block"
+                });
+            }
+            else {
+                menuList.style.maxHeight = "0px"
+                listItem.array.forEach(element => {
+                    this.style.display = "none"
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

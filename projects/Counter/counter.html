@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="counter.css">
+    <title>Document</title>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+<h1 class="counter-title">Counter</h1>
+  <div class="main">
+    <div class="counter-box">
+        <h2>People entered:</h2>
+        <h3 id="count-el">0</h3>
+        <div class="btn">
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="save-btn" onclick="save()">SAVE</button>
+        </div>
+        <p id="save-el">Previous entires: </p>
+    </div>
+  </div>
+
+    <script src="counter.js"></script>
+</body>
+</html>

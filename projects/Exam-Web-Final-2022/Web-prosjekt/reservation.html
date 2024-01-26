@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reservation.css">
+  <title>Reservation</title>
+</head>
+
+<body>
+  <div class="Container">
+    <div class="navbar">
+      <a href="./index.html"><img src="logo1.png" alt="La Mirabelle logo" class="logo"></a>
+      <!--Kode for liste. For å koble til steder på nettsiden som contact eks, så må du skrive #(id navnet) i href="" til stedet på siden du ønsker å koble til-->
+      <nav>
+        <ul id="menuList">
+          <li class="liste"><a href="./index.html">Home</a></li>
+          <li class="liste"><a href="./venue.html">Venue</a></li>
+          <li class="liste"><a href="./cafe.html">Cafe</a></li>
+          <li class="liste"><a href="./contact.html">Contact</a></li>
+          <li class="liste"><a href="./reservation.html">Reservation</a></li>
+          <li class="liste"><a href="./accessibility_page.html">Accessibility Page</a></li>
+          <li class="liste"><a href="./technology&society.html">Technology and Society</a></li>
+        </ul>
+      </nav>
+      <button id="btn" onclick="togglemenu()"><img src="menuLogo.png" class="menu-icon"></button>
+    </div>
+
+    <div class="btn-up">
+      <a href="#reservationPage"><img src="up_icon.png" alt="arrow up"></a>
+    </div>
+
+    <section id="reservationPage">
+      <div class="column1">
+        <h1>Make your reservation today!</h1>
+        <!--Kode for form er hentet fra https://www.w3schools.com/howto/howto_css_contact_form.asp-->
+        <form action="thankyou.html" method="post">
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">First Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="lname">Last Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="email">Email</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="email" placeholder="Your email..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="number">Phone number</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="number" name="phonenumber" placeholder="Your phone number..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="venue">Choose venue</label>
+            </div>
+            <div class="col-75">
+              <select id="venue" name="venue">
+                <option value="Weddingvenue">Wedding venue</option>
+                <option value="Birthdayvenue">Birthday venue</option>
+                <option value="Partyvenue">Party venue</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="guests">How many guests?</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="guests" name="numberofguests" placeholder="Enter quantity..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="date">What date?</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="date" name="whatdate" placeholder="Enter date..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="time">What time?</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="time" name="whattime" placeholder="Enter time..">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="subject">More you want to add</label>
+            </div>
+            <div class="col-75">
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+
+      <div class="column2">
+        <div class="faq">
+          <h1>FAQ</h1>
+          <h2>How do I reserve a venue?</h2>
+          <p>You are welcome to use our reservation page to make your reservation for your wanted venue. In our form you
+            can choose which venue you want and therefore please select right venue.</p>
+          <h2>How can I contact you??</h2>
+          <p>You can contact us trough our email or even call us. You are welcome to contect us whenever you want. We
+            apprecaiate your feedbacks and would love to hear more from you!</p>
+          <h2>Where are your venues located?</h2>
+          <p>You can contact us trough our email or even call us. You are welcome to contect us whenever you want. We
+            apprecaiate your feedbacks and would love to hear more from you!</p>
+          <h2>Can I have more than maximum guests?</h2>
+          <p>You can contact us trough our email or even call us. You are welcome to contect us whenever you want. We
+            apprecaiate your feedbacks and would love to hear more from you!</p>
+          <h2>How do I cancel my booking?</h2>
+          <p>You can contact us trough our email or even call us. You are welcome to contect us whenever you want. We
+            apprecaiate your feedbacks and would love to hear more from you!</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!--Bruker Javascript for å lage navbar for mindre skjermstørrelser. Selv om Javascript ikke er en del av vårt pensum,
+             så valgte vi å bruke Javascript. Vi kunne ha laget denne navbaren med CSS også, men dette ville ha blitt mer hardhendt og mindre praktisk.-->
+  <script>
+    var menuList = document.getElementById("menuList");
+    var listItem = document.getElementsByClassName("liste");
+    menuList.style.maxHeight = "0px";
+    function togglemenu() {
+
+      if (menuList.style.maxHeight === "0px") {
+        menuList.style.maxHeight = "350px"
+        listItem.array.forEach(element => {
+          this.style.display = "block"
+        });
+      }
+      else {
+        menuList.style.maxHeight = "0px"
+        listItem.array.forEach(element => {
+          this.style.display = "none"
+        });
+      }
+    }
+  </script>
+</body>
+
+</html>

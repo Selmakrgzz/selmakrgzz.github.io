@@ -1,0 +1,373 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+section {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: rgb(7, 38, 51);
+  /*height: 100vh;*/
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(7, 38, 51);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+  margin: 20px 30px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin: 0 50px 0 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Playfair Display";
+  color: #D9B382;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+nav ul li a:hover {
+  color: beige;
+}
+
+.menu-icon {
+  margin-right: 50px;
+  display: none;
+}
+
+#btn {
+  display: none;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #D9B382;
+}
+
+@media only screen and (max-width:1230px) {
+
+  .logo {
+    width: 140px;
+    cursor: pointer;
+    margin: 10px 20px;
+  }
+
+  .menu-icon {
+    width: 45px;
+    margin-right: 15px;
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    background: whitesmoke;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  nav ul li a {
+    color: rgb(7, 38, 51);
+  }
+
+  #menuList {
+    overflow: hidden;
+  }
+
+  #btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+}
+
+/*bakgrunnen på hovedsiden
+Image by Evelina Friman: https://unsplash.com/photos/hw_sKmjb0ns?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink*/
+#mainPage {
+  background: url(hovedside6.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#mainTitle {
+  margin: auto;
+  text-align: center;
+  background-color: rgb(7, 38, 51);
+  width: 100%;
+  height: 120px;
+  padding: 30px;
+}
+
+#mainTitle h1 {
+  color: #D9B382;
+  font-size: 80px;
+  font-family: Playfair Display;
+}
+
+#mainTitle p {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 5px;
+  font-family: Playfair Display;
+}
+
+.hr_01 {
+  margin: auto;
+  width: 45%;
+  color: silver;
+  background-color: silver;
+}
+
+.title1 {
+  font-size: 100px;
+  text-align: center;
+  margin-top: 66px;
+  color: #D9B382;
+  ;
+  font-family: "Playfair Display"
+}
+
+.about_txt {
+  margin-top: 30px;
+  font-size: 23px;
+}
+
+.about_txt_inside {
+  margin-top: 30px;
+}
+
+#about {
+  text-align: center;
+  color: #D9B382;
+  padding: 100px;
+  font-family: "Playfair Display";
+
+}
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding: 1px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  width: 33.33%;
+  font-family: "Playfair Display";
+  color: #D9B382;
+  padding: 10px;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+}
+
+.column img {
+  width: 100%;
+}
+
+.column p {
+  width: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+a {
+  color: #D9B382;
+}
+
+.row {
+  display: flex;
+}
+
+Clear floats after the columns .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mainInfo_pic {
+  font-family: "Playfair Display";
+  color: #D9B382;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+
+}
+
+/* Create four equal columns that floats next to each other */
+.column2 {
+  width: 33.33%;
+  padding: 10px;
+  display: flex;
+  justify-content: top;
+  flex-direction: column;
+}
+
+.column2 img {
+  width: 100%;
+}
+
+.row2 {
+  display: flex;
+}
+
+.photograph1 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+.photograph2 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+.photograph3 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+.photograph4 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+.photograph5 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+.photograph6 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+.photograph7 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr.top5 {
+  width: 55%;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20%;
+}
+
+.mainInfo_pic h1,
+h2 {
+  line-height: 40px
+}
+
+.mainInfo_pic h2 {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+
+  #mainTitle {
+    height: 130px;
+  }
+
+  #mainTitle h1 {
+    font-size: 50px;
+  }
+
+  #mainTitle p {
+    font-size: 30px;
+  }
+
+  .title1 {
+    font-size: 50px;
+    padding: 0px 20px 0px 20px;
+  }
+
+  #about {
+    padding: 50px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column {
+    width: 80%;
+    font-family: Playfair Display;
+  }
+
+  .row2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column2 {
+    width: 80%;
+  }
+}

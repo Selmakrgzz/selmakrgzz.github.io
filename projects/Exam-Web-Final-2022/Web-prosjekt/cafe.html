@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="cafe.css" rel="stylesheet" type="text/css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+</head>
+
+<body>
+  <div id="mainPage">
+    <div class="navbar">
+      <a href="./index.html"><img src="logo1.png" alt="La Mirabelle logo" class="logo"></a>
+      <!--Kode for liste. For å koble til steder på nettsiden som contact eks, så må du skrive #(id navnet) i href="" til stedet på siden du ønsker å koble til-->
+      <nav>
+        <ul id="menuList">
+          <li class="liste"><a href="./index.html">Home</a></li>
+          <li class="liste"><a href="./venue.html">Venue</a></li>
+          <li class="liste"><a href="./cafe.html">Cafe</a></li>
+          <li class="liste"><a href="./contact.html">Contact</a></li>
+          <li class="liste"><a href="./reservation.html">Reservation</a></li>
+          <li class="liste"><a href="./accessibility_page.html">Accessibility Page</a></li>
+          <li class="liste"><a href="./technology&society.html">Technology and Society</a></li>
+        </ul>
+      </nav>
+      <button id="btn" onclick="togglemenu()"><img src="menuLogo.png" class="menu-icon"></button>
+    </div>
+  </div>
+
+  <div class="btn-up">
+    <a href="#mainPage"><img src="up_icon.png" alt="arrow up"></a>
+  </div>
+
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:1100px">
+    <div class="LMcontent">
+      <!-- About the Cafe Section -->
+      <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-col m6 w3-padding-large w3-hide-small">
+          <img src="pizza1.jpg" class=" w3-image" alt="Table Setting" width="600" height="750">
+          <p class="photograph1">Image by Montatip Lilitsanong</p>
+          <!-- Image by Montatip Lilitsanong: https://unsplash.com/photos/Th_crcvH8xg?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+          <img src="steak.jpg" class=" w3-image" alt="Table Setting" width="600" height="750">
+          <p class="photograph2">Image by Artem Beliaikin</p>
+          <!-- Image by Artem Beliaikin: https://unsplash.com/photos/IpxzngYooAw?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink -->
+          <img src="pasta7.jpg" class=" w3-image" alt="Table Setting" width="600" height="750">
+          <p class="photograph3">Image by Niki Owens</p>
+          <!-- Image by Niki Owens: https://unsplash.com/photos/40OJLYVWeeM?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink-->
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+          <h1 class="start1">LA MIRABELLA</h1>
+          <hr class="start">
+          <h5 class="start1">Tradition since 1999</h5>
+
+          <br>
+
+          <p class="start">
+            Here we want to serve you the best food, made from
+            the best raw materials. We want to put you as a guest first and foremost do everything we can to ensure that
+            you receive the best service we can provide. The customer must be the focus, we welcome compliments and
+            praise and listen to your opinions on food and service and welcomes suggestions for improvements. We want to
+            solve any problems in best way possible for our customers.</p>
+
+          <br>
+          <br>
+          <br>
+
+          <p class="start"> Our cafe have an extensive experience within cooking of all sizes, and as usual we always
+            focus on quality and details. We adapt the menu as desired and ensure that the delicious food is delivered
+            at. Our kitchen prepares the food and drinks you would need throughout the day. Everything from beautiful
+            fruit platters to delicious buttered rolls and cake platters. We of course adapt for allergy sufferers or
+            other special needs.</p>
+
+          <br>
+          <br>
+          <br>
+
+          <p class="start"> La Mirabella is located on Bjørvika and the restaurant has an intimate and pleasant
+            atmosphere, with a fireplace that warms up on cold days. In the summer, we have a large outdoor terrace in
+            historic surroundings. Our menu is based on modern cuisine, and we go to great lengths to use local and
+            short-traveled goods. Welcome to us for delicious food and good service!</p>
+
+
+        </div>
+      </div>
+
+
+      <!-- Menu; Brunch, dinner & drinks-->
+      <div class="start1">
+        <div class="w3-content" style="max-width:950px">
+
+          <h5 class="size"> THE MENU </h5>
+
+          <div class="w3-row w3-center w3-card w3-padding">
+
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Brunch');" id="myLink">
+              <div class="w3-col s6 tablink">Brunch</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'Dinner');">
+              <div class="w3-col s6 tablink">Dinner</div>
+            </a>
+
+          </div>
+
+          <div id="Brunch" class="w3-container menu w3-padding-48 w3-card">
+            <h5 class="font">Croissant</h5>
+            <p class="menucss">A croissant is a laminated, yeast-leavened bakery product that contains dough/roll-in fat
+              layers to create a flaky, crispy texture.
+              <br> 49,-
+            </p><br>
+
+            <h5 class="font">Avocado Sandwich</h5>
+            <p class="menucss">A healthy and nutritious avocado sandwich that takes a classic and modernises it for
+              exquisitely juicy and unbeatable taste! <br> 69,- </p><br>
+
+            <h5 class="font">Acai Bowl</h5>
+            <p class="menucss">Acai bowls are made with superfruit acai berry puree, frozen fruits and berries then
+              topped with fresh fruit, granola, and seeds. <br> 79,-</p><br>
+
+            <h5 class="font">Focaccia</h5>
+            <p class="menucss">Focaccia is a thick pizza bread seasoned with herbs, topped with fresh mozzarella slices,
+              cherry tomatoes and basil leaves. <br> 80,- </p><br>
+
+            <h5 class="font">Chicken wrap</h5>
+            <p class="menucss">The Chicken Wrap includes buffalo chicken layered on veggies, topped with cheese and
+              dressing and wrapped in a flour tortilla. <br> 85,- </p> <br>
+
+            <p class="menucss1"> For a more in depth menu and concerns for allergies, kindly contact us!</p>
+
+          </div>
+
+          <div id="Dinner" class="w3-container menu w3-padding-48 w3-card">
+
+            <h5 class="font">Pizza</h5>
+            <p class="menucss"> Regina Margherita, Capricciosa, Diavola, Vegeteriana: 195,- <br> Napoli, Pollo, Alto
+              Adige, Calzone: 215,- </p> <br>
+
+            <h5 class="font">Pasta Fresca</h5>
+            <p class="menucss">Gnocchi alla sorrentina, bottarga, carbanora: 196,- <br> Casarecce e burrata, Spaghetti
+              alle vongole, Tagliatelle Al ragu: 210,- </p> <br>
+
+            <h5 class="font">Turkish</h5>
+            <p class="menucss">Chicken skewers, Chicken chops, Lamb chops, Beef skewers - served with Turkish bulgur
+              rice, tzatziki, salad and bread: 215,- </p> <br>
+
+            <p class="menucss"> Mixed grill - a special mix of Chicken skewers, Adana Kebab, Lamb chops & Izgara Kofte -
+              served with Turkish bulgur rice, tzatziki, salad and bread: 315,- </p> <br>
+
+
+            <h5 class="font">Indian</h5>
+            <p class="menucss"> Samosa chaat, PaniPuri (Gol Gappay), Papri chaat, Onion Bhaji: 119,- <br>
+
+              Chicken tikka, Lamb tikka, Garlic chicken tikka, Tandoori Garliv Prawns: 195,- <br>
+
+              Mango chicken curry, Chicken tikka masala, Butter chicken Masala, Lamb Karahi, Mango Lamb: 215,- </p> <br>
+
+            <p class="menucss"> Plain naan, Garlic naan, Peshwari, Roti: 45,- <br> All dishes are served with rice,
+              raita and salad.
+            </p> <br>
+
+            <p class="menucss1"> For a more in depth menu and concerns for allergies, kindly contact us!</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--Bruker Javascript for å lage navbar for mindre skjermstørrelser. Selv om Javascript ikke er en del av vårt pensum,
+         så valgte vi å bruke Javascript. Vi kunne ha laget denne navbaren med CSS også, men dette ville ha blitt mer hardhendt og mindre praktisk.-->
+    <script>
+      // Bruker Javascript for meny (brunch & dinner). Selv om Javascript ikke er en del av vårt pensum har vi likevel valgt å bruke det med tanke på variasjon i design og layout.
+
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace("", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += "";
+      }
+      document.getElementById("myLink").click();
+
+      var menuList = document.getElementById("menuList");
+      var listItem = document.getElementsByClassName("liste");
+      menuList.style.maxHeight = "0px";
+      function togglemenu() {
+
+        if (menuList.style.maxHeight === "0px") {
+          menuList.style.maxHeight = "350px"
+          listItem.array.forEach(element => {
+            this.style.display = "block"
+          });
+        }
+        else {
+          menuList.style.maxHeight = "0px"
+          listItem.array.forEach(element => {
+            this.style.display = "none"
+          });
+        }
+      }
+    </script>
+
+
+
+    <section>
+
+      <div id="drinks">
+
+        <p class="start2">DRINKS</p>
+
+        <hr class="top4">
+        <br>
+        <h4 class=start1>ESPRESSO</h4>
+
+        <p class="start">Luxuriously creamy coffee with a kiss of foamy crema and lingering aftertaste </p>
+        <br>
+        <p class="price"> 59,- </p>
+
+
+        <hr class="top3">
+        <h4 class=start1>AMERICANO</h4>
+
+        <p class="start"> Caffè Americano, prepared by diluting an espresso with hot water </p>
+        <br>
+        <p class="price"> 59,- </p>
+
+
+        <hr class="top3">
+        <h4 class=start1>HOT CHOCOLATE</h4>
+
+        <p class="start"> Melted, shaved, grated dark whote, combined with milk </p>
+        <br>
+        <p class="price"> 49,- </p>
+
+
+        <hr class="top3">
+        <h4 class=start1>PASSIONFRUIT ILLUSION</h4>
+
+        <p class="start"> Limonade, passionfruit, and butterfly pea flower tea </p>
+        <br>
+        <p class="price"> 69,- </p>
+
+
+        <hr class="top3">
+        <h4 class=start1>PINK LEMONADE</h4>
+
+        <p class="start"> Limonade with strawberry and peach </p>
+        <br>
+        <p class="price"> 79,- </p>
+
+
+        <hr class="top3">
+        <h4 class=start1>CHOCOLATE MILKSHAKE</h4>
+
+        <p class="start"> This indulgent masterpiece is one special treat. Chilled drink topped with marshmallows, cream
+          and drizzle of chocolate spread </p>
+        <br>
+        <p class="price"> 79,- </p>
+
+
+        <hr class="top3">
+
+      </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(7, 38, 51);
+  font-family: "Playfair Display";
+}
+
+section {
+  width: 100%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  background-color: rgb(7, 38, 51);
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(7, 38, 51);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+}
+
+.logo {
+  width: 150px;
+  cursor: pointer;
+  margin: 20px 30px;
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+  margin: 0 50px 0 0;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: "Playfair Display";
+  color: #D9B382;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+}
+
+nav ul li a:hover {
+  color: beige;
+}
+
+.menu-icon {
+  margin-right: 50px;
+  display: none;
+}
+
+#btn {
+  display: none;
+}
+
+.btn-up {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #D9B382;
+}
+
+/*bakgrunnen på hovedsiden*/
+/*Bildet av: TheDigitalArtist. https://pixabay.com/no/illustrations/cyber-nettverk-teknologi-3400789/*/
+#mainPage {
+  background: url(cyber_img.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+#mainTitle {
+  margin: auto;
+  text-align: center;
+  background-color: rgb(7, 38, 51);
+  width: 100%;
+  height: 120px;
+  padding: 30px;
+}
+
+#mainTitle h1 {
+  color: #D9B382;
+  font-size: 80px;
+}
+
+#mainTitle h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-top: 5px;
+}
+
+.hr_01 {
+  margin: auto;
+  width: 45%;
+  color: silver;
+  background-color: silver;
+}
+
+.intro {
+  color: silver;
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.intro h2 {
+  color: #D9B382;
+  padding: 20px;
+  font-size: 70px;
+}
+
+.intro p {
+  padding: 15px;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.hr_02 {
+  margin: auto;
+  width: 60%;
+  color: silver;
+  background-color: silver;
+}
+
+
+.hr_03 {
+  margin: auto;
+  width: 80%;
+  color: silver;
+  background-color: silver;
+}
+
+.img_page img {
+  width: 100%;
+}
+
+.photograph1 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+  margin-left: 5%;
+  font-size: 17px;
+}
+
+.column1 {
+  width: 65%;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #D9B382;
+}
+
+
+
+.column1 h3 {
+  font-size: 36px;
+  margin-bottom: 2%;
+  color: rgb(7, 38, 51);
+}
+
+.column1 p {
+  width: 90%;
+  font-size: 19px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.hr_03 {
+  margin: auto;
+  width: 80%;
+  color: black;
+  background-color: black;
+}
+
+.full_image2 {
+  width: 60%;
+  padding: 30px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #D9B382;
+}
+
+.photograph2 {
+  color: #D9B382;
+  font-style: italic;
+  text-align: left;
+}
+
+.row1 {
+  display: flex;
+  margin: auto;
+}
+
+.column2 {
+  width: 55%;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: top;
+  flex-direction: column;
+  margin-left: 7%;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #D9B382;
+}
+
+.column2 h3 {
+  font-size: 36px;
+  margin-bottom: 2%;
+  color: rgb(7, 38, 51);
+}
+
+.column2 p {
+  width: 90%;
+  font-size: 19px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.column3 {
+  width: 60%;
+  margin: auto;
+}
+
+.column3 img {
+  width: 80% !important;
+  margin-left: 9%;
+}
+
+#ending {
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width:1230px) {
+
+  .logo {
+    width: 140px;
+    cursor: pointer;
+    margin: 10px 20px;
+  }
+
+  .menu-icon {
+    width: 45px;
+    margin-right: 15px;
+    display: block;
+  }
+
+  nav ul {
+    width: 100%;
+    background: whitesmoke;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  nav ul li a {
+    color: rgb(7, 38, 51);
+  }
+
+  #menuList {
+    overflow: hidden;
+  }
+
+  #btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+  #mainTitle {
+    height: 100px;
+  }
+
+  #mainTitle h1 {
+    font-size: 50px;
+  }
+
+  .intro h2 {
+    font-size: 60px;
+  }
+
+  .column1 {
+    margin: 20px;
+  }
+
+  .full_image2 {
+    width: 75%;
+  }
+
+  .row1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .column2 {
+    margin: auto;
+    width: 70%;
+  }
+
+  .column3 {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+
+}
