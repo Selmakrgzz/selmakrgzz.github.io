@@ -469,13 +469,31 @@ section {
 }
 
 .junit-bar {
+    width: 50%;
+    height: 20px;
+    background-color: #7FA1A1;
+}
+
+.linux-bar {
     width: 40%;
     height: 20px;
     background-color: #7FA1A1;
 }
 
+.git-bar {
+    width: 30%;
+    height: 20px;
+    background-color: #7FA1A1;
+}
+
 .javascript-bar {
-    width: 55%;
+    width: 40%;
+    height: 20px;
+    background-color: #7FA1A1;
+}
+
+.spring-bar {
+    width: 40%;
     height: 20px;
     background-color: #7FA1A1;
 }
