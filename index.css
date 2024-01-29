@@ -118,6 +118,19 @@ section {
     padding: 20px 0px 40px 0px;
 }
 
+/*Scroll up styling*/
+
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.scroll-up img {
+    width: 55px;
+    height: 55px;
+}
+
 /*Home page styling starts*/
 
 #homePage {
@@ -440,6 +453,8 @@ section {
     /*min-width: 200px;*/
     height: 20px;
     background-color: #E7EBEB;
+    display: flex;
+    flex-direction: row;
 }
 
 .skill-bar {
@@ -462,10 +477,26 @@ section {
     background-color: #7FA1A1;
 }
 
+.percentage{
+    display: none;
+    background-color: #E7EBEB;
+    padding: 0px 4px 0px 4px;
+}
+
+.java-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .python-bar {
     width: 30%;
     height: 20px;
     background-color: #7FA1A1;
+}
+
+.python-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
 
 .junit-bar {
@@ -474,10 +505,20 @@ section {
     background-color: #7FA1A1;
 }
 
+.junit-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .linux-bar {
     width: 40%;
     height: 20px;
     background-color: #7FA1A1;
+}
+
+.linux-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
 
 .git-bar {
@@ -486,10 +527,20 @@ section {
     background-color: #7FA1A1;
 }
 
+.git-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .javascript-bar {
     width: 40%;
     height: 20px;
     background-color: #7FA1A1;
+}
+
+.javascript-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
 
 .spring-bar {
@@ -498,16 +549,31 @@ section {
     background-color: #7FA1A1;
 }
 
+.spring-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .sql-bar {
     width: 60%;
     height: 20px;
     background-color: #7FA1A1;
 }
 
+.sql-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .html-bar {
     width: 85%;
     height: 20px;
     background-color: #7FA1A1;
+}
+
+.html-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
 
 .row-3 h3 {
@@ -528,16 +594,31 @@ section {
     background-color: #7FA1A1;
 }
 
+.norw-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .eng-bar {
     width: 80%;
     height: 20px;
     background-color: #7FA1A1;
 }
 
+.eng-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .tur-bar {
     width: 100%;
     height: 20px;
     background-color: #7FA1A1;
+}
+
+.tur-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
 
 /*Projects page styling starts*/
@@ -612,7 +693,8 @@ section {
 .project-row-2 {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 0px 15px 0px;
 }
 
@@ -621,6 +703,8 @@ section {
     border: none;
     color: white;
     padding: 12px 50px;
+    width: 200px;
+    margin: 0px 0px 8px 0px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
