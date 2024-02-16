@@ -12,7 +12,7 @@ function homeAdd1() {
 }
 
 function homeAdd2() {
-    homeResult += 2;
+    homeResult += 10;
     homeNUM.textContent = homeResult;
 }
 
