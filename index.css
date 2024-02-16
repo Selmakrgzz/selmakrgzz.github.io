@@ -964,7 +964,10 @@ section {
     .bar {
         width: 100%;
     }
-  
+    
+    .skills-container {
+        max-height: none;
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -976,6 +979,10 @@ section {
     .project-box {
         width: 80%;
         margin-bottom: 20px;
+    }
+
+    .skills-container {
+        max-height: none;
     }
 }
 
