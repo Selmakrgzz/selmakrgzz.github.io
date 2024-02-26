@@ -489,7 +489,7 @@ section {
 }
 
 .python-bar {
-    width: 30%;
+    width: 50%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -533,7 +533,7 @@ section {
 }
 
 .javascript-bar {
-    width: 40%;
+    width: 35%;
     height: 20px;
     background-color: #7FA1A1;
 }
