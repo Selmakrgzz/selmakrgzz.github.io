@@ -554,6 +554,17 @@ section {
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
 
+.flask-bar {
+    width: 30%;
+    height: 20px;
+    background-color: #7FA1A1;
+}
+
+.flask-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .sql-bar {
     width: 50%;
     height: 20px;
