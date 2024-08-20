@@ -369,6 +369,18 @@ section {
     flex-direction: row;
 }
 
+.exp-title-box {
+    width: 60%;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.exp-title-box h3 {
+    color: #008080;
+}
+
 .col-5 {
     width: 20%;
     display: flex;
@@ -409,7 +421,6 @@ section {
     background-color: #f5f5f5;
     height: fit-content;
 }
-
 
 .skills-container {
     padding: 0px 20px 0px 20px;
@@ -974,6 +985,11 @@ section {
     .col-6 {
         width: 90%;
     }
+
+    .exp-title-box {
+        width: 90%;
+    }
+
 }
 
 @media screen and (max-width: 930px) {
@@ -1044,7 +1060,8 @@ section {
         width: 100%;
     }
 
-    
-
+    .exp-title-box {
+        width: 100%;
+    }
 }
 
