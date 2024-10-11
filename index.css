@@ -483,7 +483,7 @@ section {
 }
 
 .java-bar {
-    width: 50%;
+    width: 45%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -500,7 +500,7 @@ section {
 }
 
 .python-bar {
-    width: 50%;
+    width: 45%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -511,7 +511,7 @@ section {
 }
 
 .junit-bar {
-    width: 50%;
+    width: 45%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -544,7 +544,7 @@ section {
 }
 
 .javascript-bar {
-    width: 35%;
+    width: 25%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -566,7 +566,7 @@ section {
 }
 
 .flask-bar {
-    width: 30%;
+    width: 20%;
     height: 20px;
     background-color: #7FA1A1;
 }
