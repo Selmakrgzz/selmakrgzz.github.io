@@ -510,6 +510,17 @@ section {
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
 
+.c-bar {
+    width: 10%;
+    height: 20px;
+    background-color: #7FA1A1;
+}
+
+.c-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
 .junit-bar {
     width: 45%;
     height: 20px;
@@ -572,6 +583,17 @@ section {
 }
 
 .flask-bar:hover + .percentage {
+    display: block;
+    box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
+}
+
+.net-bar {
+    width: 20%;
+    height: 20px;
+    background-color: #7FA1A1;
+}
+
+.net-bar:hover + .percentage {
     display: block;
     box-shadow: 1px 1px 10px 1px rgba(0,0,0,0.2);
 }
@@ -696,6 +718,15 @@ section {
 }
 
 .row-md-4 {
+    width: 100%;
+    padding: 10px;
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.row-md-5 {
     width: 100%;
     padding: 10px;
     /*background-color: green;*/
