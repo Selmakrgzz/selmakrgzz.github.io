@@ -1038,7 +1038,7 @@ section {
 }
 
 @media screen and (max-width: 880px) {
-    .row-md-2, .row-md-3, .row-md-4 {
+    .row-md-2, .row-md-3, .row-md-4, .row-md-5 {
         flex-direction: column;
         align-items: center;
     }
