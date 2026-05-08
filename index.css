@@ -215,7 +215,7 @@ section {
 
 .col-md-4 {
     /*background-color: red;*/
-    width: 50%;
+    width: 10%;
     display: flex;
     justify-content: center;
 }
