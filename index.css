@@ -483,7 +483,7 @@ section {
 }
 
 .java-bar {
-    width: 45%;
+    width: 50%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -500,7 +500,7 @@ section {
 }
 
 .python-bar {
-    width: 45%;
+    width: 90%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -533,7 +533,7 @@ section {
 }
 
 .linux-bar {
-    width: 40%;
+    width: 30%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -544,7 +544,7 @@ section {
 }
 
 .git-bar {
-    width: 30%;
+    width: 90%;
     height: 20px;
     background-color: #7FA1A1;
 }
@@ -555,7 +555,7 @@ section {
 }
 
 .javascript-bar {
-    width: 25%;
+    width: 80%;
     height: 20px;
     background-color: #7FA1A1;
 }
